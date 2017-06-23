@@ -11,13 +11,14 @@
   P11JNI.jar複製至JRE_HOME\lib\ext目錄下
   
 
-4.JavaBridge.jar 點開後至http://localhost:8080/查看JavaBridge.log，找到java.ext.dirs 後面的路徑即是JavaBridge.jar目錄
-  ，需將要與PHP 溝通的JAVA檔案放置該位置
+4.JavaBridge.jar 點開後至http://localhost:8080/查看JavaBridge.log，找到java.ext.dirs 後面的路徑即是
+  JavaBridge.jar目錄，需將要與PHP 溝通的JAVA檔案放置該位置
   
   
 5.PHP檔內需require_once('Java.inc')
 
 
-使用方式:Forphp.java為主要與HiSecure API套件溝通，SmartCardController則負責實例化Forphp.java操作HiSecure API套件，
-        憑證使用上都需依照Token，Forphp.java內getToken()方法中 Token tok = module.getToken(module.getTokens()[0]);
-        獲取Token值，這邊的做法是PHP端透過login()獲取這個Token並設置在Session中，使用上就將此Session傳至Forphp.java即可
+使用方式:Forphp.java為主要與HiSecure API套件溝通，SmartCardController則負責實例化Forphp.java操作
+        HiSecure API套件，憑證使用上都需依照Token，Forphp.java內getToken()方法中 Token tok = 
+        module.getToken(module.getTokens()[0]);獲取Token值，這邊的做法是PHP端透過login()獲取這個
+        Token並設置在Session中，使用上就將此Session傳至Forphp.java即可

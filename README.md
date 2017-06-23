@@ -4,7 +4,7 @@
 
 
 2.下載&安裝 自然人憑證卡片管理工具、讀卡機驅動以及申請HiSecure API套件 (這邊使用HiSecureJava2.2.0版本)
-從  https://gpkiapi.nat.gov.tw/hisecure/product/no1.do
+     從  https://gpkiapi.nat.gov.tw/hisecure/product/no1.do
   
   
 3.將HiSecure API套件內 P11JNI.dll安裝至windows\system32 或 JRE_HOME\lib\i386下

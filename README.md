@@ -16,3 +16,8 @@
   
   
 5.PHP檔內需require_once('Java.inc')
+
+
+使用方式:Forphp.java為主要與HiSecure API套件溝通，SmartCardController則負責實例化Forphp.java操作HiSecure API套件，
+        憑證使用上都需依照Token，Forphp.java內getToken()方法中 Token tok = module.getToken(module.getTokens()[0]);
+        獲取Token值，這邊的做法是PHP端透過login()獲取這個Token並設置在Session中，使用上就將此Session傳至Forphp.java即可

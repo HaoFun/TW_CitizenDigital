@@ -8,12 +8,12 @@
   
   
 3.將HiSecure API套件內 P11JNI.dll安裝至windows\system32 或 JRE_HOME\lib\i386下
-  P11JNI.jar複製至JRE_HOME\lib\ext目錄下
+  ，將P11JNI.jar複製至JRE_HOME\lib\ext目錄下
   
 
 4.JavaBridge.jar 點開後至http://localhost:8080/查看JavaBridge.log，找到java.ext.dirs 後面的路徑即是
-  JavaBridge.jar目錄，需將要與PHP 溝通的JAVA檔案放置該位置
-  
+  JavaBridge.jar目錄，需將要與PHP 溝通的JAVA檔案放置該目錄位置下
+  
   
 5.PHP檔內需require_once('Java.inc')
 

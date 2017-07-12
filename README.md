@@ -1,4 +1,4 @@
-# TW_DigitalCard
+# 自然人憑證JAVA_API  PHP
 
 1.下載Java.inc & JavaBridge.jar    從  http://php-java-bridge.sourceforge.net/pjb/download.php  下載
 
